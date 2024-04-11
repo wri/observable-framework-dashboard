@@ -29,7 +29,7 @@ const zoom = 4;
 const div = display(document.createElement("div"));
 div.style = "height: 400px;";
 const map = L.map(div).setView(center,zoom);
-var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=1003762824b9687f',theme:'light'})
+var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=a861fc6443e6e507',theme:'light'})
 layer.addTo(map);
 ```
 
@@ -53,7 +53,7 @@ Client-side rendered map means we can have... dark mode!
 const div = display(document.createElement("div"));
 div.style = "height: 400px;";
 const map = L.map(div).setView(center,zoom);
-var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=1003762824b9687f', theme:'dark'})
+var layer = protomapsL.leafletLayer({url:'https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=a861fc6443e6e507', theme:'dark'})
 layer.addTo(map);
 ```
 
