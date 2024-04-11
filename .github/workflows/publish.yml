@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: '${{ github.token }}'
       - uses: actions/setup-node@v3
         with:
           node-version: 21.x
@@ -21,6 +21,6 @@ jobs:
       - uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: '${{ github.token }}'
           publish_dir: ./dist
           force_orphan: true
