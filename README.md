@@ -2,11 +2,11 @@
 
 This is an [Observable Framework](https://observablehq.com/framework) project. To start the local preview server, run:
 
-```
-npm run dev
-```
+`npm run dev` or `yarn dev`
 
 Then visit <http://localhost:3000> to preview your project.
+
+Commiting code to the main branch will deploy it to [Github Pages](https://wri.github.io/observable-framework-dashboard/) via a [Github Action](https://github.com/wri/observable-framework-dashboard/actions/workflows/publish.yml).
 
 For more, see <https://observablehq.com/framework/getting-started>.
 
